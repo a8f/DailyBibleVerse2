@@ -29,8 +29,8 @@ function copyExclude(src, dest) {
     }
 };
 
-const src = ".\\ChromeExt";
-const dest = ".\\bin";
+const src = path.join(".", "ChromeExt");
+const dest = path.join(".", "bin");
 
 try {
     fs.rmdirSync(dest, {
